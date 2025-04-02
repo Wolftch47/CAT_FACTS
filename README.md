@@ -1,12 +1,54 @@
-# React + Vite
+# Cat Facts App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+Cat Facts App is a React-based web application that provides users with random cat facts and images. Users can save interesting facts, copy them to the clipboard, and view their saved facts in a dedicated section. The app is responsive and mobile-friendly.
 
-Currently, two official plugins are available:
+## Features
+- **Home Page:**
+  - Attractive landing page with a brief description of the app.
+  - Button to navigate to the 'New Curiosity' page.
+- **New Curiosity Page:**
+  - Displays a random cat fact.
+  - Shows an image of a cat with the first word of the fact overlaid.
+  - Button to save the fact locally.
+  - Button to copy the fact to the clipboard.
+- **My Curiosities Page:**
+  - Displays all saved cat facts with images.
+  - Clicking an image opens a popup/modal showing the full fact with an option to copy it to the clipboard.
+- **Navigation Bar:**
+  - Dark-themed with 3D-styled buttons.
+  - Responsive and mobile-friendly design.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- React.js
+- React Router
+- React Hooks (useState, useEffect)
+- Local Storage
+- Fetch API
+- CSS for styling (dark theme and responsive design)
 
-## Expanding the ESLint configuration
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-username/cat-facts-app.git
+   cd cat-facts-app
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
+4. Open the app in your browser at `http://localhost:5173/`.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## API References
+- **Random Cat Fact API:** [catfact.ninja](https://catfact.ninja/fact)
+- **Cat Images API:** [cataas.com](https://cataas.com)
+
+## Contribution
+If you’d like to contribute, feel free to fork the repo and submit a pull request!
+
+
+
