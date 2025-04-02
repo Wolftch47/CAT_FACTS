@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo oscuro global */
+body {
+  background-color: #121212;  /* Fondo oscuro */
+  color: white;  /* Texto blanco */
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;  /* Asegura que el fondo cubra toda la pantalla */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+  background-color: #1a1a1a;  /* Fondo más oscuro para la barra */
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Estilo para los enlaces dentro de la barra */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Separar los enlaces */
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+}
+
+/* Estilo para los enlaces con efectos de bordes en 3D */
+a {
+  color: #ffffff;  /* Texto blanco */
+  text-decoration: none;  /* Eliminar subrayado */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 2px solid transparent;  /* Bordes invisibles por ahora */
+  border-radius: 5px;
+  transition: all 0.3s ease;  /* Transición suave para efectos */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* Sombra sutil */
+}
+
+/* Efecto 3D cuando se pasa el mouse sobre los enlaces */
+a:hover {
+  color: #ff6347;  /* Color vibrante al pasar el mouse */
+  background-color: #2e2e2e;  /* Fondo oscuro para el botón */
+  border: 2px solid #ff6347;  /* Bordes rojos en hover */
+  box-shadow: 0 5px 15px rgba(255, 99, 71, 0.5);  /* Sombra más fuerte */
+  transform: translateY(-3px);  /* Efecto de "subir" 3D */
+}
+
+/* Estilo para las páginas */
+.pages {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Efecto de transición en la barra de navegación cuando se hace scroll */
+nav.scrolled {
+  background-color: #333;  /* Cambia el fondo cuando se hace scroll */
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos generales de la aplicación */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
